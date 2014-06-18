@@ -5,6 +5,8 @@ class Post < ActiveRecord::Base
 
   validate :published_at_cannot_be_in_past, :on => :create
 
+  belongs_to :user
+
   def published_at_cannot_be_in_past
     if published_at.present? && published_at < DateTime.now - 1.hour
       errors.add(:published_at, "can't be in the past")

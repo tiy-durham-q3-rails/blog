@@ -1,0 +1,9 @@
+<h2><%= link_to post.title, post %></h2>
+<p>Published at <%= post.published_at %> by <%= post.user.name %></p>
+<p>
+  <%= link_to 'Edit', edit_post_path(post) %> |
+  <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+<div>
+  <%= simple_format post.body %>
+</div>
