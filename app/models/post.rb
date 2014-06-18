@@ -1,15 +1,10 @@
 class Post < ActiveRecord::Base
   validates :title, presence: true
   validates :body, presence: true
-  validates :published_at, presence: true
-
-  validate :published_at_cannot_be_in_past, :on => :create
 
   belongs_to :user
 
-  def published_at_cannot_be_in_past
-    if published_at.present? && published_at < DateTime.now - 1.hour
-      errors.add(:published_at, "can't be in the past")
-    end
+  before_create do
+    self.published_at = DateTime.now
   end
 end
