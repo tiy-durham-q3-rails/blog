@@ -6,6 +6,8 @@ This blog application shows:
 * associations
 * custom views
 
+You can find my terminal commands from class in [terminal.txt](terminal.txt).
+
 ### Setup
 
 ```sh

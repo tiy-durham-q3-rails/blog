@@ -1,0 +1,812 @@
+Last login: Wed Jun 18 09:57:38 on ttys000
+a
+~
+$ tiy
+
+/Volumes/TIY
+$ atom ror-curriculum/
+
+/Volumes/TIY
+$ cd scratch/
+/Volumes/TIY/scratch
+
+/Volumes/TIY/scratch
+$ rails new blog
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/views/layouts/application.html.erb
+      create  app/assets/images/.keep
+      create  app/mailers/.keep
+      create  app/models/.keep
+      create  app/controllers/concerns/.keep
+      create  app/models/concerns/.keep
+      create  bin
+      create  bin/bundle
+      create  bin/rails
+      create  bin/rake
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/secrets.yml
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/cookies_serializer.rb
+      create  config/initializers/filter_parameter_logging.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.keep
+      create  lib/assets
+      create  lib/assets/.keep
+      create  log
+      create  log/.keep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/robots.txt
+      create  test/fixtures
+      create  test/fixtures/.keep
+      create  test/controllers
+      create  test/controllers/.keep
+      create  test/mailers
+      create  test/mailers/.keep
+      create  test/models
+      create  test/models/.keep
+      create  test/helpers
+      create  test/helpers/.keep
+      create  test/integration
+      create  test/integration/.keep
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.keep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.keep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/..........
+Fetching additional metadata from https://rubygems.org/..
+Resolving dependencies...
+Using rake 10.3.2
+Using i18n 0.6.9
+Using json 1.8.1
+Installing minitest 5.3.5
+Using thread_safe 0.3.4
+Using tzinfo 1.2.1
+Using activesupport 4.1.1
+Using builder 3.2.2
+Using erubis 2.7.0
+Using actionview 4.1.1
+Using rack 1.5.2
+Using rack-test 0.6.2
+Using actionpack 4.1.1
+Using mime-types 1.25.1
+Using polyglot 0.3.5
+Using treetop 1.4.15
+Using mail 2.5.4
+Using actionmailer 4.1.1
+Using activemodel 4.1.1
+Using arel 5.0.1.20140414130214
+Using activerecord 4.1.1
+Using bundler 1.6.2
+Using coffee-script-source 1.7.0
+Using execjs 2.2.0
+Using coffee-script 2.2.0
+Using thor 0.19.1
+Using railties 4.1.1
+Using coffee-rails 4.0.1
+Using hike 1.2.3
+Using multi_json 1.10.1
+Using jbuilder 2.1.1
+Using jquery-rails 3.1.0
+Using tilt 1.4.1
+Using sprockets 2.11.0
+Using sprockets-rails 2.1.3
+Using rails 4.1.1
+Using rdoc 4.1.1
+Using sass 3.2.19
+Using sass-rails 4.0.3
+Using sdoc 0.4.0
+Using spring 1.1.3
+Using sqlite3 1.3.9
+Using turbolinks 2.2.2
+Using uglifier 2.5.1
+Your bundle is complete!
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+         run  bundle exec spring binstub --all
+* bin/rake: spring inserted
+* bin/rails: spring inserted
+
+/Volumes/TIY/scratch 5s
+$ mkdir "I am a joker who makes bad directories"
+
+/Volumes/TIY/scratch
+$ cd I\ am\ a\ joker\ who\ makes\ bad\ directories/
+/Volumes/TIY/scratch/I am a joker who makes bad directories
+
+/Volumes/TIY/scratch/I am a joker who makes bad directories
+$ cd ..
+
+/Volumes/TIY/scratch
+$ rmdir I\ am\ a\ joker\ who\ makes\ bad\ directories/
+
+/Volumes/TIY/scratch
+$ cd blog/
+/Volumes/TIY/scratch/blog
+
+/Volumes/TIY/scratch/blog
+$ ls
+Gemfile		Rakefile	config		lib		test
+Gemfile.lock	app		config.ru	log		tmp
+README.rdoc	bin		db		public		vendor
+
+/Volumes/TIY/scratch/blog
+$ rails generate scaffold post title:string body:text published_at:datetime
+      invoke  active_record
+      create    db/migrate/20140618145340_create_posts.rb
+      create    app/models/post.rb
+      invoke    test_unit
+      create      test/models/post_test.rb
+      create      test/fixtures/posts.yml
+      invoke  resource_route
+       route    resources :posts
+      invoke  scaffold_controller
+      create    app/controllers/posts_controller.rb
+      invoke    erb
+      create      app/views/posts
+      create      app/views/posts/index.html.erb
+      create      app/views/posts/edit.html.erb
+      create      app/views/posts/show.html.erb
+      create      app/views/posts/new.html.erb
+      create      app/views/posts/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/posts_controller_test.rb
+      invoke    helper
+      create      app/helpers/posts_helper.rb
+      invoke      test_unit
+      create        test/helpers/posts_helper_test.rb
+      invoke    jbuilder
+      create      app/views/posts/index.json.jbuilder
+      create      app/views/posts/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/posts.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/posts.css.scss
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.css.scss
+
+/Volumes/TIY/scratch/blog
+$ rake db:migrate
+== 20140618145340 CreatePosts: migrating ======================================
+-- create_table(:posts)
+   -> 0.0014s
+== 20140618145340 CreatePosts: migrated (0.0014s) =============================
+
+
+/Volumes/TIY/scratch/blog
+$ rake -T
+rake about                              # List versions of all Rails frameworks and the environment
+rake assets:clean[keep]                 # Remove old compiled assets
+rake assets:clobber                     # Remove compiled assets
+rake assets:environment                 # Load asset compile environment
+rake assets:precompile                  # Compile all the assets named in config.assets.precompile
+rake cache_digests:dependencies         # Lookup first-level dependencies for TEMPLATE (like messages/show or ...
+rake cache_digests:nested_dependencies  # Lookup nested dependencies for TEMPLATE (like messages/show or comme...
+rake db:create                          # Creates the database from DATABASE_URL or config/database.yml for th...
+rake db:drop                            # Drops the database from DATABASE_URL or config/database.yml for the ...
+rake db:fixtures:load                   # Load fixtures into the current environment's database
+rake db:migrate                         # Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)
+rake db:migrate:status                  # Display status of migrations
+rake db:rollback                        # Rolls the schema back to the previous version (specify steps w/ STEP=n)
+rake db:schema:cache:clear              # Clear a db/schema_cache.dump file
+rake db:schema:cache:dump               # Create a db/schema_cache.dump file
+rake db:schema:dump                     # Create a db/schema.rb file that is portable against any DB supported...
+rake db:schema:load                     # Load a schema.rb file into the database
+rake db:seed                            # Load the seed data from db/seeds.rb
+rake db:setup                           # Create the database, load the schema, and initialize with the seed d...
+rake db:structure:dump                  # Dump the database structure to db/structure.sql
+rake db:version                         # Retrieves the current schema version number
+rake doc:app                            # Generate docs for the app -- also available doc:rails, doc:guides (o...
+rake log:clear                          # Truncates all *.log files in log/ to zero bytes (specify which logs ...
+rake middleware                         # Prints out your Rack middleware stack
+rake notes                              # Enumerate all annotations (use notes:optimize, :fixme, :todo for focus)
+rake notes:custom                       # Enumerate a custom annotation, specify with ANNOTATION=CUSTOM
+rake rails:template                     # Applies the template supplied by LOCATION=(/path/to/template) or URL
+rake rails:update                       # Update configs and some other initially generated files (or use just...
+rake routes                             # Print out all defined routes in match order, with names
+rake secret                             # Generate a cryptographically secure secret key (this is typically us...
+rake stats                              # Report code statistics (KLOCs, etc) from the application
+rake test                               # Runs test:units, test:functionals, test:generators, test:integration...
+rake test:all                           # Run tests quickly by merging all types and not resetting db
+rake test:all:db                        # Run tests quickly, but also reset db
+rake time:zones:all                     # Displays all time zones, also available: time:zones:us, time:zones:l...
+rake tmp:clear                          # Clear session, cache, and socket files from tmp/ (narrow w/ tmp:sess...
+rake tmp:create                         # Creates tmp directories for sessions, cache, sockets, and pids
+
+/Volumes/TIY/scratch/blog
+$ rails --help
+Usage: rails COMMAND [ARGS]
+
+The most common rails commands are:
+ generate    Generate new code (short-cut alias: "g")
+ console     Start the Rails console (short-cut alias: "c")
+ server      Start the Rails server (short-cut alias: "s")
+ dbconsole   Start a console for the database specified in config/database.yml
+             (short-cut alias: "db")
+ new         Create a new Rails application. "rails new my_app" creates a
+             new application called MyApp in "./my_app"
+
+In addition to those, there are:
+ application  Generate the Rails application code
+ destroy      Undo code generated with "generate" (short-cut alias: "d")
+ plugin new   Generates skeleton for developing a Rails plugin
+ runner       Run a piece of code in the application environment (short-cut alias: "r")
+
+All commands can be run with -h (or --help) for more information.
+
+/Volumes/TIY/scratch/blog
+$ rake
+Run options: --seed 31132
+
+# Running:
+
+.......
+
+Finished in 0.540262s, 12.9567 runs/s, 24.0624 assertions/s.
+
+7 runs, 13 assertions, 0 failures, 0 errors, 0 skips
+
+/Volumes/TIY/scratch/blog
+$ rake
+Run options: --seed 52961
+
+# Running:
+
+F......E
+
+Finished in 0.121107s, 66.0573 runs/s, 99.0859 assertions/s.
+
+  1) Failure:
+PostsControllerTest#test_should_create_post [/Volumes/TIY/scratch/blog/test/controllers/posts_controller_test.rb:20]:
+"Post.count" didn't change by 1.
+Expected: 3
+  Actual: 2
+
+
+  2) Error:
+PostTest#test_published_at_must_not_be_before_current_date:
+NoMethodError: undefined method `on' for #<ActiveModel::Errors:0x007fd5174d06b8>
+    test/models/post_test.rb:8:in `block in <class:PostTest>'
+
+8 runs, 12 assertions, 1 failures, 1 errors, 0 skips
+
+/Volumes/TIY/scratch/blog 1
+$ rake
+Run options: --seed 38580
+
+# Running:
+
+.F......
+
+Finished in 0.124107s, 64.4605 runs/s, 104.7483 assertions/s.
+
+  1) Failure:
+PostsControllerTest#test_should_create_post [/Volumes/TIY/scratch/blog/test/controllers/posts_controller_test.rb:20]:
+"Post.count" didn't change by 1.
+Expected: 3
+  Actual: 2
+
+8 runs, 13 assertions, 1 failures, 0 errors, 0 skips
+
+/Volumes/TIY/scratch/blog 1
+$ rake
+Run options: --seed 2164
+
+# Running:
+
+F.......
+
+Finished in 0.125004s, 63.9980 runs/s, 103.9967 assertions/s.
+
+  1) Failure:
+PostsControllerTest#test_should_create_post [/Volumes/TIY/scratch/blog/test/controllers/posts_controller_test.rb:20]:
+"Post.count" didn't change by 1.
+Expected: 3
+  Actual: 2
+
+8 runs, 13 assertions, 1 failures, 0 errors, 0 skips
+
+/Volumes/TIY/scratch/blog 1
+$ rake
+Run options: --seed 27624
+
+# Running:
+
+........
+
+Finished in 0.147392s, 54.2770 runs/s, 101.7694 assertions/s.
+
+8 runs, 15 assertions, 0 failures, 0 errors, 0 skips
+
+/Volumes/TIY/scratch/blog
+$ git add --patch
+fatal: Not a git repository (or any parent up to mount point /Volumes/TIY)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+
+/Volumes/TIY/scratch/blog 128
+$ git init
+Initialized empty Git repository in /Volumes/TIY/scratch/blog/.git/
+
+/Volumes/TIY/scratch/blog
+$ git add --patch
+No changes.
+
+/Volumes/TIY/scratch/blog
+$ git add -A
+
+/Volumes/TIY/scratch/blog
+$ ls
+Gemfile		Rakefile	config		lib		test
+Gemfile.lock	app		config.ru	log		tmp
+README.rdoc	bin		db		public		vendor
+
+/Volumes/TIY/scratch/blog
+$ gc -m 'Initial commit'
+[master (root-commit) dc1d790] Initial commit
+ 74 files changed, 1269 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Gemfile
+ create mode 100644 Gemfile.lock
+ create mode 100644 README.rdoc
+ create mode 100644 Rakefile
+ create mode 100644 app/assets/images/.keep
+ create mode 100644 app/assets/javascripts/application.js
+ create mode 100644 app/assets/javascripts/posts.js.coffee
+ create mode 100644 app/assets/stylesheets/application.css
+ create mode 100644 app/assets/stylesheets/posts.css.scss
+ create mode 100644 app/assets/stylesheets/scaffolds.css.scss
+ create mode 100644 app/controllers/application_controller.rb
+ create mode 100644 app/controllers/concerns/.keep
+ create mode 100644 app/controllers/posts_controller.rb
+ create mode 100644 app/helpers/application_helper.rb
+ create mode 100644 app/helpers/posts_helper.rb
+ create mode 100644 app/mailers/.keep
+ create mode 100644 app/models/.keep
+ create mode 100644 app/models/concerns/.keep
+ create mode 100644 app/models/post.rb
+ create mode 100644 app/views/layouts/application.html.erb
+ create mode 100644 app/views/posts/_form.html.erb
+ create mode 100644 app/views/posts/edit.html.erb
+ create mode 100644 app/views/posts/index.html.erb
+ create mode 100644 app/views/posts/index.json.jbuilder
+ create mode 100644 app/views/posts/new.html.erb
+ create mode 100644 app/views/posts/show.html.erb
+ create mode 100644 app/views/posts/show.json.jbuilder
+ create mode 100755 bin/bundle
+ create mode 100755 bin/rails
+ create mode 100755 bin/rake
+ create mode 100755 bin/spring
+ create mode 100644 config.ru
+ create mode 100644 config/application.rb
+ create mode 100644 config/boot.rb
+ create mode 100644 config/database.yml
+ create mode 100644 config/environment.rb
+ create mode 100644 config/environments/development.rb
+ create mode 100644 config/environments/production.rb
+ create mode 100644 config/environments/test.rb
+ create mode 100644 config/initializers/backtrace_silencers.rb
+ create mode 100644 config/initializers/cookies_serializer.rb
+ create mode 100644 config/initializers/filter_parameter_logging.rb
+ create mode 100644 config/initializers/inflections.rb
+ create mode 100644 config/initializers/mime_types.rb
+ create mode 100644 config/initializers/session_store.rb
+ create mode 100644 config/initializers/wrap_parameters.rb
+ create mode 100644 config/locales/en.yml
+ create mode 100644 config/routes.rb
+ create mode 100644 config/secrets.yml
+ create mode 100644 db/migrate/20140618145340_create_posts.rb
+ create mode 100644 db/schema.rb
+ create mode 100644 db/seeds.rb
+ create mode 100644 lib/assets/.keep
+ create mode 100644 lib/tasks/.keep
+ create mode 100644 log/.keep
+ create mode 100644 public/404.html
+ create mode 100644 public/422.html
+ create mode 100644 public/500.html
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/robots.txt
+ create mode 100644 test/controllers/.keep
+ create mode 100644 test/controllers/posts_controller_test.rb
+ create mode 100644 test/fixtures/.keep
+ create mode 100644 test/fixtures/posts.yml
+ create mode 100644 test/helpers/.keep
+ create mode 100644 test/helpers/posts_helper_test.rb
+ create mode 100644 test/integration/.keep
+ create mode 100644 test/mailers/.keep
+ create mode 100644 test/models/.keep
+ create mode 100644 test/models/post_test.rb
+ create mode 100644 test/test_helper.rb
+ create mode 100644 vendor/assets/javascripts/.keep
+ create mode 100644 vendor/assets/stylesheets/.keep
+
+/Volumes/TIY/scratch/blog master
+$ rails generate scaffold users name:string
+Plural version of the model detected, using singularized version. Override with --force-plural.
+      invoke  active_record
+      create    db/migrate/20140618160300_create_users.rb
+      create    app/models/user.rb
+      invoke    test_unit
+      create      test/models/user_test.rb
+      create      test/fixtures/users.yml
+      invoke  resource_route
+       route    resources :users
+      invoke  scaffold_controller
+      create    app/controllers/users_controller.rb
+      invoke    erb
+      create      app/views/users
+      create      app/views/users/index.html.erb
+      create      app/views/users/edit.html.erb
+      create      app/views/users/show.html.erb
+      create      app/views/users/new.html.erb
+      create      app/views/users/_form.html.erb
+      invoke    test_unit
+      create      test/controllers/users_controller_test.rb
+      invoke    helper
+      create      app/helpers/users_helper.rb
+      invoke      test_unit
+      create        test/helpers/users_helper_test.rb
+      invoke    jbuilder
+      create      app/views/users/index.json.jbuilder
+      create      app/views/users/show.json.jbuilder
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/users.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/users.css.scss
+      invoke  scss
+   identical    app/assets/stylesheets/scaffolds.css.scss
+
+/Volumes/TIY/scratch/blog master*
+$ rake db:migrate
+== 20140618160300 CreateUsers: migrating ======================================
+-- create_table(:users)
+   -> 0.0031s
+== 20140618160300 CreateUsers: migrated (0.0031s) =============================
+
+
+/Volumes/TIY/scratch/blog master*
+$ rails generate migration --help
+Usage:
+  rails generate migration NAME [field[:type][:index] field[:type][:index]] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+  -o, --orm=NAME                                 # Orm to be invoked
+                                                 # Default: active_record
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new database migration. Pass the migration name, either
+    CamelCased or under_scored, and an optional list of attribute pairs as arguments.
+
+    A migration class is generated in db/migrate prefixed by a timestamp of the current date and time.
+
+    You can name your migration in either of these formats to generate add/remove
+    column lines from supplied attributes: AddColumnsToTable or RemoveColumnsFromTable
+
+Example:
+    `rails generate migration AddSslFlag`
+
+    If the current date is May 14, 2008 and the current time 09:09:12, this creates the AddSslFlag migration
+    db/migrate/20080514090912_add_ssl_flag.rb
+
+    `rails generate migration AddTitleBodyToPost title:string body:text published:boolean`
+
+    This will create the AddTitleBodyToPost in db/migrate/20080514090912_add_title_body_to_post.rb with this in the Change migration:
+
+      add_column :posts, :title, :string
+      add_column :posts, :body, :text
+      add_column :posts, :published, :boolean
+
+Migration names containing JoinTable will generate join tables for use with
+has_and_belongs_to_many associations.
+
+Example:
+    `rails g migration CreateMediaJoinTable artists musics:uniq`
+
+    will create the migration
+
+    create_join_table :artists, :musics do |t|
+      # t.index [:artist_id, :music_id]
+      t.index [:music_id, :artist_id], unique: true
+    end
+
+/Volumes/TIY/scratch/blog master*
+$ rails generate migration AddUserToPost user:references
+      invoke  active_record
+      create    db/migrate/20140618160905_add_user_to_post.rb
+
+/Volumes/TIY/scratch/blog master*
+$ rake db:migrate
+== 20140618160905 AddUserToPost: migrating ====================================
+-- add_reference(:posts, :user, {:index=>true})
+   -> 0.0030s
+== 20140618160905 AddUserToPost: migrated (0.0030s) ===========================
+
+
+/Volumes/TIY/scratch/blog master*
+$ rails console
+Loading development environment (Rails 4.1.1)
+Pry not available.
+irb(main):001:0> p = Post.first
+  Post Load (0.1ms)  SELECT  "posts".* FROM "posts"   ORDER BY "posts"."id" ASC LIMIT 1
+=> #<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 15:06:44", user_id: nil>
+irb(main):002:0> post = Post.first
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts"   ORDER BY "posts"."id" ASC LIMIT 1
+=> #<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 15:06:44", user_id: nil>
+irb(main):003:0> post.user
+=> nil
+irb(main):004:0> user = User.first
+  User Load (0.2ms)  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+=> #<User id: 1, name: "Jim Dangly", created_at: "2014-06-18 16:03:54", updated_at: "2014-06-18 16:03:54">
+irb(main):005:0> post.user = user
+=> #<User id: 1, name: "Jim Dangly", created_at: "2014-06-18 16:03:54", updated_at: "2014-06-18 16:03:54">
+irb(main):006:0> post.save
+   (0.3ms)  begin transaction
+  SQL (1.1ms)  UPDATE "posts" SET "updated_at" = ?, "user_id" = ? WHERE "posts"."id" = 1  [["updated_at", "2014-06-18 16:12:55.757351"], ["user_id", 1]]
+   (3.5ms)  commit transaction
+=> true
+irb(main):007:0> post = Post.find(1)
+  Post Load (0.2ms)  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+=> #<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 16:12:55", user_id: 1>
+irb(main):008:0> post.user
+  User Load (0.1ms)  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+=> #<User id: 1, name: "Jim Dangly", created_at: "2014-06-18 16:03:54", updated_at: "2014-06-18 16:03:54">
+irb(main):009:0> user
+=> #<User id: 1, name: "Jim Dangly", created_at: "2014-06-18 16:03:54", updated_at: "2014-06-18 16:03:54">
+irb(main):010:0> user.posts
+  Post Load (0.1ms)  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 16:12:55", user_id: 1>]>
+irb(main):011:0> user.posts.each { |post| puts post.title }
+First post
+=> [#<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 16:12:55", user_id: 1>]
+irb(main):012:0> Post.all.each do |post|
+irb(main):013:1* user.posts << post
+irb(main):014:1> end
+  Post Load (0.2ms)  SELECT "posts".* FROM "posts"
+   (0.1ms)  begin transaction
+   (0.1ms)  commit transaction
+   (0.0ms)  begin transaction
+  SQL (0.4ms)  UPDATE "posts" SET "updated_at" = ?, "user_id" = ? WHERE "posts"."id" = 2  [["updated_at", "2014-06-18 16:14:59.244540"], ["user_id", 1]]
+   (4.7ms)  commit transaction
+   (0.1ms)  begin transaction
+  SQL (0.2ms)  UPDATE "posts" SET "updated_at" = ?, "user_id" = ? WHERE "posts"."id" = 3  [["updated_at", "2014-06-18 16:14:59.252055"], ["user_id", 1]]
+   (5.5ms)  commit transaction
+=> [#<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 16:12:55", user_id: 1>, #<Post id: 2, title: "Second post", body: "WHOOO", published_at: "2014-06-18 15:19:00", created_at: "2014-06-18 15:20:15", updated_at: "2014-06-18 16:14:59", user_id: 1>, #<Post id: 3, title: "Super long post", body: "Lorem ipsum dolor sit amet, consectetur adipiscing...", published_at: "2014-06-18 15:30:00", created_at: "2014-06-18 15:32:16", updated_at: "2014-06-18 16:14:59", user_id: 1>]
+irb(main):015:0> jim = User.first
+  User Load (0.2ms)  SELECT  "users".* FROM "users"   ORDER BY "users"."id" ASC LIMIT 1
+=> #<User id: 1, name: "Jim Dangly", created_at: "2014-06-18 16:03:54", updated_at: "2014-06-18 16:03:54">
+irb(main):016:0> jim.posts
+  Post Load (0.3ms)  SELECT "posts".* FROM "posts"  WHERE "posts"."user_id" = ?  [["user_id", 1]]
+=> #<ActiveRecord::Associations::CollectionProxy [#<Post id: 1, title: "First post", body: "This is a great blog post.", published_at: "2014-06-18 06:56:00", created_at: "2014-06-18 14:57:13", updated_at: "2014-06-18 16:12:55", user_id: 1>, #<Post id: 2, title: "Second post", body: "WHOOO", published_at: "2014-06-18 15:19:00", created_at: "2014-06-18 15:20:15", updated_at: "2014-06-18 16:14:59", user_id: 1>, #<Post id: 3, title: "Super long post", body: "Lorem ipsum dolor sit amet, consectetur adipiscing...", published_at: "2014-06-18 15:30:00", created_at: "2014-06-18 15:32:16", updated_at: "2014-06-18 16:14:59", user_id: 1>]>
+irb(main):017:0> 
+
+/Volumes/TIY/scratch/blog master* 692s
+$ gap
+diff --git a/app/controllers/posts_controller.rb b/app/controllers/posts_controller.rb
+index 6d115ff..db41f29 100644
+--- a/app/controllers/posts_controller.rb
++++ b/app/controllers/posts_controller.rb
+@@ -69,6 +69,6 @@ class PostsController < ApplicationController
+ 
+     # Never trust parameters from the scary internet, only allow the white list through.
+     def post_params
+-      params.require(:post).permit(:title, :body, :published_at)
++      params.require(:post).permit(:title, :body, :published_at, :user_id)
+     end
+ end
+Stage this hunk [y,n,q,a,d,/,e,?]? y
+
+diff --git a/app/models/post.rb b/app/models/post.rb
+index 395c13c..0bc752e 100644
+--- a/app/models/post.rb
++++ b/app/models/post.rb
+@@ -5,6 +5,8 @@ class Post < ActiveRecord::Base
+ 
+   validate :published_at_cannot_be_in_past, :on => :create
+ 
++  belongs_to :user
++
+   def published_at_cannot_be_in_past
+     if published_at.present? && published_at < DateTime.now - 1.hour
+       errors.add(:published_at, "can't be in the past")
+Stage this hunk [y,n,q,a,d,/,e,?]? y
+
+diff --git a/app/views/posts/_form.html.erb b/app/views/posts/_form.html.erb
+index 28acddf..1addfca 100644
+--- a/app/views/posts/_form.html.erb
++++ b/app/views/posts/_form.html.erb
+@@ -12,6 +12,10 @@
+   <% end %>
+ 
+   <div class="field">
++    <%= f.label :user_id, "User" %><br>
++    <%= f.collection_select :user_id, User.all, :id, :name %>
++  </div>
++  <div class="field">
+     <%= f.label :title %><br>
+     <%= f.text_field :title %>
+   </div>
+Stage this hunk [y,n,q,a,d,/,e,?]? y
+
+diff --git a/app/views/posts/index.html.erb b/app/views/posts/index.html.erb
+index 7e3e5c8..5116807 100644
+--- a/app/views/posts/index.html.erb
++++ b/app/views/posts/index.html.erb
+@@ -1,28 +1,8 @@
+-<h1>Listing posts</h1>
++<h1>My Awesome Blog</h1>
+ 
+-<table>
+-  <thead>
+-    <tr>
+-      <th>Title</th>
+-      <th>Body</th>
+-      <th>Published at</th>
+-      <th colspan="3"></th>
+-    </tr>
+-  </thead>
+-
+-  <tbody>
+-    <% @posts.each do |post| %>
+-      <tr>
+-        <td><%= post.title %></td>
+-        <td><%= post.body %></td>
+-        <td><%= post.published_at %></td>
+-        <td><%= link_to 'Show', post %></td>
+-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+-      </tr>
+-    <% end %>
+-  </tbody>
+-</table>
++<% @posts.each do |post| %>
++    <%= render partial: "post", locals: {:post => post} %>
++<% end %>
+ 
+ <br>
+ 
+Stage this hunk [y,n,q,a,d,/,s,e,?]? y
+
+diff --git a/app/views/posts/show.html.erb b/app/views/posts/show.html.erb
+index 7099c30..c999e44 100644
+--- a/app/views/posts/show.html.erb
++++ b/app/views/posts/show.html.erb
+@@ -1,19 +1,7 @@
+ <p id="notice"><%= notice %></p>
+ 
+-<p>
+-  <strong>Title:</strong>
+-  <%= @post.title %>
+-</p>
++<h1><%= link_to "My Awesome Blog", posts_path %></h1>
+ 
+-<p>
+-  <strong>Body:</strong>
+-  <%= @post.body %>
+-</p>
++<%= render partial: "post", locals: {:post => @post} %>
+ 
+-<p>
+-  <strong>Published at:</strong>
+-  <%= @post.published_at %>
+-</p>
+-
+-<%= link_to 'Edit', edit_post_path(@post) %> |
+ <%= link_to 'Back', posts_path %>
+Stage this hunk [y,n,q,a,d,/,s,e,?]? y
+
+diff --git a/config/routes.rb b/config/routes.rb
+index a06bd4d..ca25074 100644
+--- a/config/routes.rb
++++ b/config/routes.rb
+@@ -1,4 +1,6 @@
+ Rails.application.routes.draw do
++  resources :users
++
+   resources :posts
+ 
+   # The priority is based upon order of creation: first created -> highest priority.
+Stage this hunk [y,n,q,a,d,/,e,?]? ^C
+
+/Volumes/TIY/scratch/blog master* 7s 130
+$ git add -A
+
+/Volumes/TIY/scratch/blog master*
+$ gc -m 'Added post users'
+[master 19c12ab] Added post users
+ 26 files changed, 278 insertions(+), 45 deletions(-)
+ create mode 100644 app/assets/javascripts/users.js.coffee
+ create mode 100644 app/assets/stylesheets/users.css.scss
+ create mode 100644 app/controllers/users_controller.rb
+ create mode 100644 app/helpers/users_helper.rb
+ create mode 100644 app/models/user.rb
+ create mode 100644 app/views/posts/_post.html.erb
+ rewrite app/views/posts/index.html.erb (92%)
+ create mode 100644 app/views/users/_form.html.erb
+ create mode 100644 app/views/users/edit.html.erb
+ create mode 100644 app/views/users/index.html.erb
+ create mode 100644 app/views/users/index.json.jbuilder
+ create mode 100644 app/views/users/new.html.erb
+ create mode 100644 app/views/users/show.html.erb
+ create mode 100644 app/views/users/show.json.jbuilder
+ create mode 100644 db/migrate/20140618160300_create_users.rb
+ create mode 100644 db/migrate/20140618160905_add_user_to_post.rb
+ create mode 100644 test/controllers/users_controller_test.rb
+ create mode 100644 test/fixtures/users.yml
+ create mode 100644 test/helpers/users_helper_test.rb
+ create mode 100644 test/models/user_test.rb
+
+/Volumes/TIY/scratch/blog master
+$ rake -D time
+rake time:zones:all
+    Displays all time zones, also available: time:zones:us, time:zones:local -- filter with OFFSET parameter, e.g., OFFSET=-6
+
+
+/Volumes/TIY/scratch/blog master*
+$ rake time:zones:us
+
+* UTC -10:00 *
+Hawaii
+
+* UTC -09:00 *
+Alaska
+
+* UTC -08:00 *
+Pacific Time (US & Canada)
+
+* UTC -07:00 *
+Arizona
+Mountain Time (US & Canada)
+
+* UTC -06:00 *
+Central Time (US & Canada)
+
+* UTC -05:00 *
+Eastern Time (US & Canada)
+Indiana (East)
+
+
+/Volumes/TIY/scratch/blog master*
+$ 
