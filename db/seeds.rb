@@ -5,3 +5,18 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+users = []
+
+5.times do
+  users << User.create(name: Faker::Name.name)
+end
+
+10.times do
+  post = Post.create(title: Faker::Company.catch_phrase,
+              body: Faker::Lorem.paragraph(rand(1..5)),
+              user: users.sample)
+  post.published_at = (DateTime.now - rand(1..5).months - rand(1..10).hours)
+  post.save
+end
+

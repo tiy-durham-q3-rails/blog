@@ -1,0 +1,8 @@
+<h2>Login</h2>
+<p id="notice"><%= notice %></p>
+<%= form_tag(login_path, method: :post) do %>
+    <%= label_tag :user_id, "User" %>
+    <%= select_tag :user_id,
+        options_for_select(@users.map { |user| [user.name, user.id] }) %>
+    <%= submit_tag "Login", :class => :button %>
+<% end %>
